@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الهيئة العالمية للإغاثة والتنمية – أنصر</title>
+
+  <!-- SEO & Meta -->
+  <meta name="description" content="الهيئة العالمية للإغاثة والتنمية - أنصر، منظمة يمنية أهلية مستقلة تضم مشاريع في مجالات الإغاثة والتنمية.">
+  <meta name="keywords" content="أنصر, إغاثة, تنمية, منظمة يمنية, مشاريع">
+  <meta name="author" content="منظمة أنصر">
+
+  <!-- CSS خارجي -->
+  <link rel="stylesheet" href="globals.css" />
+   <link rel="stylesheet" href="moves.css" />
+   
+   <style>
+   .s-header {
+   background: #074e6c;
+  
+
+  text-align: center;
+  color: #f4f9fc;
+
+}
+
+.overlay {
+
+  background: transparent;
+  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  text-align: center;
+  color: #fff;
+}
+   </style>
+
+
+
+</head>
+<body>
+
+  <header class="s-header">
+    <div class="overlay" role="banner">
+	
+     <div class="headCon">
+	 
+	  <div style="width:100%; margin:0px 40px 15px 5px">
+      <div class="headDivider" style="margin:110px 0px 10px 0px"></div>	
+	   <nav class="nav-links" aria-label="القائمة الرئيسية">
+        <a href="#about">نبذة عنا</a>
+        <a href="project.html">مشاريعنا</a>
+		</nav>
+	  </div>
+     
+		
+		 <img src="img/onsurlogo.png" alt="شعار أنصر" class="logo" />
+		 
+		
+	  <div style="width:100%; padding:50px 10px 0px 40px">
+  
+<div class="e-icons">
+  <!-- غلاف للسيلكت لإضافة السهم -->
+  <div class="select-wrap">
+    <select id="languageSelect" onchange="switchLanguage()">
+      <option value="ar">العربية</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+    <!-- أيقونة لغة (اختياري) -->
+  <a href="#" class="flag"><img src="img/E.png" alt="English"></a>
+</div>
+
+	  
+	  
+	 
+	  
+      <div class="headDivider"></div>	
+	   <nav  class="nav-links" aria-label="القائمة الرئيسية" style="display: flex; justify-content: flex-end;margin-top:20px">	 
+	    <a  href="map.html">تواجدنا</a>
+        <a href="conectUs.html">تواصل بنا</a>
+      </nav>
+	  </div>
+	  
+<button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true"></div>
+
+
+
+	</div>
+	  
+	  
+    
+    </div>
+  </header>
+
+  <main>
+
+
+ <section class="map-section" id="map"> 
+ 
+ <h2>تواجدنا في الميدان</h2> 
+ 
+ <div class="map-container"> 
+ 
+ 
+ <img src="img/Yemen Map SVG.svg" alt="خريطة اليمن" class="map-image" loading="lazy"> 
+ 
+ <div class="map-pin" style="top:49%; left:20%;" data-city="صنعاء" 
+ data-info=" عدد المشاريع: 6
+<br/><br/> القطاعات: تعليم، طوارئ، أمن غذائي، حماية
+<br/><br/> أبرز الجهات: Humaniti، ICNA Relief Canada، HCI
+<br/><br/> عدد المستفيدين: 14,742 فردًا
+
+"> 
+ </div> 
+ 
+ <div class="map-pin" style="top:71%; left:15%;" data-city="تعز"
+ data-info=" عدد المشاريع: 9
+<br/><br/> القطاعات: طوارئ، أمن غذائي، حماية، مياه
+<br/><br/> أبرز الجهات: Human Concern، World Care
+<br/><br/> عدد المستفيدين: 79,650 فردًا
+"> 
+ </div>
+ 
+ <div class="map-pin" style="top:53%; left:11%;" data-city="الحديدة" 
+ data-info=" عدد المشاريع: 4
+<br/><br/>القطاعات: تعليم، طوارئ، حماية
+<br/><br/>أبرز الجهات: UKIM، HCI، Humaniti
+<br/><br/>عدد المستفيدين: 9,096 فردًا
+">
+ </div>
+ 
+ <div class="map-pin" style="top:47%; left:31%;" data-city="مأرب" 
+ data-info="عدد المشاريع: 50
+<br/><br/> القطاعات: تعليم، طوارئ، أمن غذائي، صحي، حماية، إيواء، مياه
+<br/><br/> أبرز الجهات: Penny Appeal Canada، Syria Care، Humaniti، World Care
+<br/><br/> عدد المستفيدين: 491,740 فردًا
+"> 
+ </div> 
+ 
+ <div class="map-pin" style="top:64%; left:20%;" data-city="إب"
+ data-info=" عدد المشاريع: 2
+<br/><br/> القطاعات: أمن غذائي، مياه
+<br/><br/> أبرز الجهات: UKIM
+<br/><br/> عدد المستفيدين: 7,800 فردًا
+">
+ </div>
+ 
+ 
+ <div id="tooltip" class="tooltip" role="tooltip"></div> 
+ </div> 
+ </section> 
+	
+	
+
+  </main>
+
+  
+  
+  
+  
+   <!-- footer -->
+<footer class="footer-section">
+  <div class="footer-overlay">
+    <div class="footer-top">
+      <h2>العطاء طريقنا.. والأمل ثمرة جهودنا</h2>
+	  <div class="social-icons">
+        <a href="#"><img src="img/f.png" alt="فيسبوك"></a>
+        <a href="#"><img src="img/t.png" alt="تويتر"></a>
+        <a href="#"><img src="img/i.png" alt="انستغرام"></a>
+        <a href="#"><img src="img/y.png" alt="يوتيوب"></a>
+        <a href="#"><img src="img/l.png" alt="لينكدإن"></a>
+      </div>
+      
+    </div>
+
+    <!-- خط فاصل بين القسمين -->
+    <div class="footer-divider"></div>
+
+    <!-- الشعار يظهر فوق القسمين -->
+    <div class="footer-logo">
+      <img src="img/onsurlogo.png" alt="شعار أنصر" loading="lazy">
+    </div>
+
+    
+      <p class="footer-call">تابعنا وكن جزءاً من التغيير</p>
+	   <div class="footer-bottom">
+      <p class="p">© 2025 منظمة أنصر – جميع الحقوق محفوظة</p>
+	  </div>
+   
+  </div>
+</footer>
+
+
+
+  <!-- جافاسكريبت خارجي -->
+  <script src="main.js"></script>
+  <script src="script.js"></script>
+<script>
+(function(){
+  const overlay = document.querySelector('.overlay');
+  const logo = document.querySelector('.logo');
+  if(!overlay || !logo) return;
+
+  function setupLines(){
+    const o = overlay.getBoundingClientRect();
+    const l = logo.getBoundingClientRect();
+
+    // منتصف الشعار عموديًا بالنسبة للـ overlay
+    const logoMidY = (l.top - o.top) + (l.height/2);
+
+    // مسافة ثابتة صغيرة من الشعار (فراغ بصري)
+    const gapFromLogo = 16;
+
+    // المسافة التي نريد التوقف عندها قبل الحافة
+    const edgeGap = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--edgeGap')) || 20;
+
+    /* 
+      الطول الأيسر = المسافة من حافة overlay اليسرى + edgeGap إلى يسار الشعار - gapFromLogo
+      الطول الأيمن = المسافة من يمين الشعار إلى حافة overlay اليمنى - edgeGap - gapFromLogo
+    */
+    const leftAvailable  = (l.left - (o.left + edgeGap)) - gapFromLogo;
+    const rightAvailable = ((o.right - edgeGap) - l.right) - gapFromLogo;
+
+    const leftWidth  = Math.max(0, leftAvailable);
+    const rightWidth = Math.max(0, rightAvailable);
+
+    // ضبط المتغيرات للـ CSS
+    overlay.style.setProperty('--logoY', logoMidY + 'px');
+    overlay.style.setProperty('--leftWidth', leftWidth + 'px');
+    overlay.style.setProperty('--rightWidth', rightWidth + 'px');
+
+    // شغل الأنيميشن
+    overlay.classList.add('animate');
+  }
+
+  // بعد التحميل لضمان قياسات دقيقة
+  if (document.readyState === 'complete') setupLines();
+  else window.addEventListener('load', setupLines);
+
+  // إعادة حساب عند تغيير الحجم
+  window.addEventListener('resize', () => {
+    overlay.classList.remove('animate');
+    requestAnimationFrame(setupLines);
+  }, { passive: true });
+})();
+</script>
+
+
+</body>
+</html>

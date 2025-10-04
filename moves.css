@@ -1,0 +1,70 @@
+:root{
+  /* مقدار التوقف قبل الحافة (غيريه كما تريدين) */
+  --edgeGap: 20px;
+}
+
+/* نخلي overlay مرجعاً للـ ::before/::after */
+.overlay{ position: relative; }
+
+/* الخطين */
+.overlay::before,
+.overlay::after{
+  content:"";
+  position:absolute;
+  height:2px;
+  top: var(--logoY, 140px);
+  /* وهج خفيف */
+  background:
+    radial-gradient(closest-side, rgba(255,255,255,.9), rgba(255,255,255,0)),
+    linear-gradient(90deg, rgba(255,255,255,.9), rgba(255,255,255,.7));
+  filter: drop-shadow(0 0 6px rgba(255,255,255,.55));
+  transform: scaleX(0);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* الأيسر: من يسار الهيدر باتجاه الشعار */
+.overlay::before{
+  left: var(--edgeGap, 20px);
+  width: var(--leftWidth, 0px);  /* ← مهم */
+  transform-origin: right;
+}
+
+/* الأيمن: من يمين الهيدر باتجاه الشعار */
+.overlay::after{
+  right: var(--edgeGap, 20px);
+  width: var(--rightWidth, 0px); /* ← مهم */
+  transform-origin: left;
+}
+
+/* تشغيل الأنيميشن */
+.overlay.animate::before,
+.overlay.animate::after{
+  animation: lineGrow 2s ease forwards;
+}
+@keyframes lineGrow { to { transform: scaleX(1); } }
+
+/* ظهور العنوان والروابط */
+.hero-text h1,
+.nav-links a{
+  opacity: 0;
+  transform: translateY(22px);
+}
+.overlay.animate .hero-text h1{
+  animation: rise .6s  cubic-bezier(.22,.15,.24,1) .75s forwards;
+}
+.overlay.animate .nav-links a{
+  animation: rise .6s ease 1.05s forwards;
+}
+.nav-links a:nth-child(2){ animation-delay: 1.15s !important; }
+.nav-links a:nth-child(3){ animation-delay: 1.25s !important; }
+.nav-links a:nth-child(4){ animation-delay: 1.35s !important; }
+@keyframes rise { to { opacity:1; transform: translateY(0); } }
+
+
+/* تقليل الحركة */
+@media (prefers-reduced-motion: reduce){
+  .overlay::before,.overlay::after{ transform:none !important; animation:none !important; }
+  .hero-text h1,.nav-links a{ opacity:1 !important; transform:none !important; animation:none !important; }
+  .logo{ opacity:1 !important; transform:none !important; }
+}

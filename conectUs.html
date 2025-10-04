@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>روابط التواصل الاجتماعي</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	  
+      background: radial-gradient(circle at center, 
+  #074E6C 30%, 
+  #085E7F 40%,
+  #E6F2F7 100%, 
+  rgba(243, 173, 0, 0.1) 100% );
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .logo {
+      margin-top: 50px;
+	  animation: fadeInDown 1s ease-in-out;
+	  align-items: center;
+	  margin:170px 50px 10px 190px;
+    }
+
+    .logo img {
+      width: 500px;
+      max-width: 80%;
+	  
+	  
+    }
+
+    .icon-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 40px;
+      padding: 60px 30px;
+      max-width: 600px;
+      width: 100%;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .icon {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background-color: #fff;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.1);
+      background: linear-gradient(145deg, #f3ad00, #ffc94a);
+      color: white;
+    }
+
+    .icon img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 8px;
+      transition: transform 0.3s;
+    }
+
+    .icon:hover img {
+      transform: rotate(10deg) scale(1.1);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .icon-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+      .icon {
+        width: 90px;
+        height: 90px;
+        font-size: 12px;
+      }
+      .icon img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  </style>
+  
+</head>
+<body>
+
+  <!-- الشعار -->
+  <div class="logo">
+    <img src="icons/logo.png" alt="Logo ">
+  </div>
+
+  <!-- أيقونات التواصل بشكل دائري متوازن -->
+  <div class="icon-container">
+    <a href="https://www.on-sur-yemen.com/" target="_blank" class="icon">
+      <img src="icons/website.png" alt="Website">
+      <span>Website</span>
+    </a>
+    <a href="https://www.facebook.com/onsur.ye?mibextid=ZbWKwL" target="_blank" class="icon">
+      <img src="icons/facebook.png" alt="Facebook">
+      <span>Facebook</span>
+    </a>
+    <a href="https://www.instagram.com/onsur_yemen?igsh=OGQ5ZDc2ODk2ZA==" target="_blank" class="icon">
+      <img src="icons/instagram.png" alt="Instagram">
+      <span>Instagram</span>
+    </a>
+    <a href="https://www.linkedin.com/company/the-international-association-for-relief-and-development-onsur/" target="_blank" class="icon">
+      <img src="icons/linkedin.png" alt="LinkedIn">
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://whatsapp.com/channel/0029Vacm1nMKgsO2sQHCWa2l" target="_blank" class="icon">
+      <img src="icons/whatsapp.png" alt="WhatsApp">
+      <span>WhatsApp</span>
+    </a>
+    <a href="https://t.me/ONSUR_YEMEN" target="_blank" class="icon">
+      <img src="icons/telegram.png" alt="Telegram">
+      <span>Telegram</span>
+    </a>
+    <a href="https://youtube.com/@onsur_yemen?si=7t-oCifjzM0FRB-r" target="_blank" class="icon">
+      <img src="icons/youtube.png" alt="YouTube">
+      <span>YouTube</span>
+    </a>
+    <a href="mailto:info@onsurye.org" class="icon">
+      <img src="icons/email.png" alt="Email">
+      <span>Email</span>
+    </a>
+  </div>
+
+</body>
+</html>
